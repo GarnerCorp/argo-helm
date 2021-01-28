@@ -1,0 +1,6 @@
+^CODEOWNERS$
+ignore$
+^LICENSE
+^\.github/
+\.lock$
+^charts/argo-cd/values\.yaml$
