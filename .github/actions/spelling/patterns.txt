@@ -1,0 +1,11 @@
+# ssh keys
+(?:ecdsa-sha2-nistp256|ssh-(?:rsa|ed25519)) \S+
+
+# salted crypted
+"admin.password": ".*"
+
+# Regular Expressions
+\bpattern: \^.*
+
+# <word>v#
+[Vv]\d+(?:\b|(?=[a-zA-Z_]))
