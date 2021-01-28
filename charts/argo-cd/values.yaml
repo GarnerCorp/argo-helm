@@ -10,7 +10,7 @@ installCRDs: true
 global:
   image:
     repository: quay.io/argoproj/argocd
-    tag: v1.7.11
+    tag: latest
     imagePullPolicy: IfNotPresent
   securityContext: {}
   #  runAsUser: 999
