@@ -46,7 +46,7 @@ clusterworkflowtemplate
 codebase
 config
 configmap
-copyutil
+copydex
 coreos
 crd
 Creds
@@ -78,6 +78,7 @@ Filesystem
 filetype
 finalizers
 fullname
+garnercorp
 gce
 gcr
 gcs
@@ -103,7 +104,6 @@ grpc
 guestbook
 haproxy
 healthz
-helmpack
 hostname
 hpa
 html
