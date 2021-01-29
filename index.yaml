@@ -1,3 +1,130 @@
----
 apiVersion: v1
-entries: {}
+entries:
+  argo:
+  - apiVersion: v2
+    appVersion: v2.12.5
+    created: "2021-01-29T02:06:15.687195044Z"
+    dependencies:
+    - condition: minio.install
+      name: minio
+      repository: https://helm.min.io/
+      version: 8.0.9
+    description: A Helm chart for Argo Workflows
+    digest: 39680f973ba939d614ecb688d278cbe4963dd9f26a7ccac5e527ef95b4d71eb5
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    - name: benjaminws
+    name: argo
+    urls:
+    - argo-0.15.3.tgz
+    version: 0.15.3
+  argo-cd:
+  - apiVersion: v1
+    appVersion: 1.9.0
+    created: "2021-01-29T02:06:15.693287555Z"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.10.1
+    description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 1789b464ac273b4c79ba5d5854d8704f88e7afbae4c7703c93b9d0e88241a54e
+    home: https://github.com/garnercorp/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    keywords:
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    - name: seanson
+    name: argo-cd
+    urls:
+    - argo-cd-2.12.0.tgz
+    version: 2.12.0
+  argo-ci:
+  - apiVersion: v1
+    appVersion: v1.0.0-alpha2
+    created: "2021-01-29T02:06:15.697567962Z"
+    dependencies:
+    - name: argo
+      repository: https://argoproj.github.io/argo-helm
+      version: 0.2.1
+    description: A Helm chart for Argo-CI
+    digest: 7e17c9aac8b5c14538a3dd51968ddb1ee53f398c063fa3ab81604ccf5b95937c
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    name: argo-ci
+    urls:
+    - argo-ci-0.1.7.tgz
+    version: 0.1.7
+  argo-events:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2021-01-29T02:06:15.698250163Z"
+    description: A Helm chart to install Argo-Events in k8s Cluster
+    digest: a2e219c361013126947cee681c9d37f0ec1d2ba37a4c6246f841d7d7041e723e
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    keywords:
+    - argo-events
+    - sensor-controller
+    - eventsource-controller
+    - eventbus-controller
+    maintainers:
+    - name: VaibhavPage
+    - name: whynowy
+    name: argo-events
+    sources:
+    - https://github.com/argoproj/argo-events
+    urls:
+    - argo-events-1.0.0.tgz
+    version: 1.0.0
+  argo-rollouts:
+  - apiVersion: v1
+    appVersion: 0.10.2
+    created: "2021-01-29T02:06:15.701148769Z"
+    description: A Helm chart for Argo Rollouts
+    digest: 459e2fc59c88eebc2a75cdb6304b3c455e217094db12f34cf56250e79cfc514e
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/argo.png
+    maintainers:
+    - name: alexmt
+    - name: dthomson25
+    - name: jessesuen
+    name: argo-rollouts
+    urls:
+    - argo-rollouts-0.4.1.tgz
+    version: 0.4.1
+  argocd-notifications:
+  - apiVersion: v2
+    appVersion: 0.7.0
+    created: "2021-01-29T02:06:15.70205467Z"
+    description: A Helm chart for ArgoCD notifications, an add-on to ArgoCD.
+    digest: 9df9740217fb3e2ead68548d16f7f2fe9b7c0559e037034bc190300c427fc3b6
+    home: https://github.com/argoproj/argo-helm
+    icon: https://raw.githubusercontent.com/argoproj/argo/master/docs/assets/argo.png
+    keywords:
+    - argoproj
+    - argocd
+    - argocd-notifications
+    maintainers:
+    - name: alexmt
+    - name: andyfeller
+    name: argocd-notifications
+    type: application
+    urls:
+    - argocd-notifications-1.0.11.tgz
+    version: 1.0.11
+generated: "2021-01-29T02:06:15.682679336Z"
